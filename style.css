@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    
+    color: #2C003E;
+}
+body{
+    padding-top: 2rem;
+    background-color: 	#ae9da9;
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.game{
+    height: 70vmin;
+    width: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 21vmin;
+    width: 21vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem 	#aaaaaa;
+    font-size: 10vmin;
+    color: 	#fbf1f9;
+}
+.color-1{
+    background-color: #7e4b8b;
+}
+.color-2{
+    background-color: 	#f8ccf9;
+}
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #D7BDE2;
+    color: #2C003E;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+#reset-btn:hover {
+    transform: scale(1.1);
+    background-color: #C39BD3;
+}
+
+
+
+@keyframes winnerAnimation {
+    0% { transform: scale(1); opacity: 0.7; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.7; }
+}
+
+#msg {
+    font-size: 10vmin;
+    color: #2C003E;
+    font-weight: bold;
+    text-transform: uppercase;
+    animation: winnerAnimation 1.5s infinite alternate; /* Apply animation */
+}
+
+.msgContainer {
+    height: 40vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #D7BDE2;
+    color: #2C003E;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#new-btn:hover {
+    transform: scale(1.1);
+    background-color: #C39BD3;
+}
